@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangfei.simplebook.VideoDetailActivity"
+    >
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView
+        android:id="@+id/video_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

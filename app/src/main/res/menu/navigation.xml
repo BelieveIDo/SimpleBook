@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/main_pager"
+            android:icon="@drawable/tab_home_seletor"
+            android:checked="true"
+            android:title="主页"
+            />
+        <item
+            android:id="@+id/find"
+            android:icon="@drawable/tab_find_selector"
+            android:title="发现"
+            />
+        <item
+            android:id="@+id/circle"
+            android:icon="@drawable/tab_circle_selector"
+            android:title="圈子"
+            />
+        <item
+            android:id="@+id/mine"
+            android:icon="@drawable/tab_mine_selector"
+            android:title="我的"
+            />
+
+    </group>
+    <item android:title="个人中心">
+        <menu>
+            <item
+                android:id="@+id/setting"
+                android:icon="@mipmap/ic_discovery_default_avatar"
+                android:title="设置"
+                />
+            <item
+                android:id="@+id/exit"
+                android:icon="@mipmap/ic_vote_skip_normal_night"
+                android:title="退出"
+                />
+        </menu>
+    </item>
+
+</menu>
