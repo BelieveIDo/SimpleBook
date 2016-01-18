@@ -15,6 +15,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.wangfei.simplebook.adapters.MainViewPagerAdapter;
 import com.wangfei.simplebook.fragments.EssenceFragment;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements
     private List<Fragment> list;
     private DrawerLayout drawerlayout;
     private ActionBarDrawerToggle toggle;
-
+    private ImageView mUserImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements
         navigation = (NavigationView) findViewById(R.id.main_navigationview);
         floatBt = (FloatingActionButton) findViewById(R.id.main_float_btn);
         drawerlayout = (DrawerLayout) findViewById(R.id.main_drawerlayout);
+        mUserImage= (ImageView) findViewById(R.id.user_image);
     }
 
     //初始化数据
@@ -81,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements
         viewpager.addOnPageChangeListener(this);
         navigation.setNavigationItemSelectedListener(this);
         drawerlayout.setDrawerListener(this);
+        mUserImage.setOnClickListener(this);
     }
 
     @Override
@@ -88,6 +91,9 @@ public class MainActivity extends AppCompatActivity implements
         switch (v.getId()) {
             case R.id.main_navigationview:
                 drawerlayout.closeDrawer(GravityCompat.START);
+                break;
+            case R.id.user_image:
+                drawerlayout.openDrawer(GravityCompat.START);
                 break;
         }
     }
