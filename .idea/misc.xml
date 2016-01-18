@@ -66,19 +66,8 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="myConfigurationMap">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <SvnBranchConfiguration>
-              <option name="trunkUrl" value="https://10.0.159.30/svn/neihan/SimpleBook" />
-            </SvnBranchConfiguration>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="mySupportsUserInfoFilter" value="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\WangFei\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="masterDetails">
     <states>
